@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Trap';
+    src: url('../trap/Trap-Bold.otf') format('otf');
+        font-weight: 700;
+        font-display: swap;
+        font-style: normal;
+    }
+
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+    :root {
+        --white:#f8f8f8;
+        --black:#1b1b1b;
+        --darker:#151515;
+    }
+
+    body {
+        font-family: 'Satoshi-Variable';
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        padding: 1rem;
+        background-color: #0D0D0D;
+    }
+
+    header .links {
+        width: -webkit-fill-available;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    a {
+        color: var(--black);
+        text-decoration: none;
+        background: var(--white);
+        padding: 0.25rem 0.635rem;
+        border-radius: 2rem;
+        font-weight: 600;
+        transition: 0.1s ease-in-out;
+    }
+
+    [data-button-order="3"] {
+        border: 2px solid var(--white);
+        background: transparent;
+        color: var(--white);
+        font-weight: 500;
+    }
+
+    [data-button-order="3"]:hover {
+        border: 2px dashed var(--white);
+        padding: 0.25rem 1.5rem;
+    }
+
+    h2.trap {
+        font-family: 'Trap', sans-serif;
+        font-size: 2rem;
+    }
+
+    .darker {
+        background: var(--darker);
+    }
+
+    section {
+        display: flex;
+        width: -webkit-fill-available;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem 4rem;
+    }
+
+    section .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section .title h2{
+        font-family: 'Trap';
+        font-size: 4rem;
+    }
+
+    section .title h3{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    section video {
+        border-radius: 2rem;
+        width: 15rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        font-size: 1.125rem;
+    }
+
+    .flex-center {
+        align-items: center;
+    }
+
+    .card-row {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        max-width: 19rem;
+        border-radius: 1rem;
+        background: #383838;
+        gap: 0.625rem;
+        align-items: center;
+        padding: 0.625rem;
+        text-align: center;
+    }
+
+    button {
+        border-radius: 1rem;
+        background: #1B1B1B;
+        border: none;
+        width: 3.25rem;
+        padding: 0.625rem;
+        transition: 0.1s;
+    }
+
+    .button-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .style-1 {
+        background: #383838;
+        padding: 0.625rem;
+        border-radius: 1rem;
+    }
+
+    button:hover {
+        background-color: #333;
+    }
+
+    .card img {
+        border-radius: 0.5rem;
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    .card span{
+        font-size: 1rem;
+    }
+
+    footer {
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.625rem;
+    }
+
+    /* Responsive */
+
+    @media screen and (max-width:481px){
+        .media-480{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            padding: 1.5rem;
+        }
+    }
